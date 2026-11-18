@@ -1,0 +1,68 @@
+:root {
+  font-family: "Courier New", monospace;
+  font-size: 125%;
+  background: #fffbf4;
+  align-content: center;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 45rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+nav li + li::before {
+  content: "|";
+  margin-right: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+input,
+textarea {
+  width: 100%;
+  max-width: 30rem;
+  font: inherit;
+  padding: 0.4rem;
+}
+textarea {
+  resize: vertical;
+}

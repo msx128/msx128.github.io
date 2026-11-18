@@ -1,11 +1,99 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CARD</title>
     <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD</title>
   </head>
   <body>
-    <h1>Hello, World!?</h1>
+    <header>
+      <nav aria-label="site">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/gallery/">gallery?</a></li>
+          <li><a href="/form/">form</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="page">
+        <ul>
+          <li><a href="#personalInfo">info</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#manifest">manifest</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 lang="ja">ようこそ</h1>
+      <section class="personalInfo" id="personalInfo">
+        <h2>about me</h2>
+        <p>if you think about it I don't really want personal data here.</p>
+        <p>
+          Rust, Golang, Python and none of them particularly good. but I'm
+          always happy to try something new and I think that most of the learned
+          concepts are language independent. currently I'm at the stage of
+          looking for the first job and don't actually know what I need to do
+          exactly to get it, but I'm trying.
+        </p>
+        <p>
+          what else? I was always a private person so even as a kid I was not
+          looking at others, saying this at 12 I read the whole "Kaguya-sama:
+          Love Is War" and created a personality based on it. now guess if this
+          is joke or not.
+        </p>
+      </section>
+      <section class="projects" id="projects">
+        <h2>projects</h2>
+        <ul>
+          <li>
+            TEYE - basic CRUD app in Golang featuring heavy SQLite integration
+            and React(TypeScript) frontend.
+          </li>
+          <li>
+            file-sharing - CRUD in Django Rest Framework, most of the time was
+            spent gluing components: reverse proxy, s3-storage, postgresql.
+            (that was not the most pleasant experience)
+          </li>
+          <li>
+            monitor - metric collector in Rust, cross-platform, under the hood
+            using sysinfo crate for cross-platform support, using TcpListener to
+            expose /metrics to fetch data, which is stored in OpenMetrics
+            format.
+          </li>
+          <li>
+            and more on <a href="https://github.com/msx128">Github</a>, I always
+            update this list because older projects start to feel too simple to
+            show.
+          </li>
+        </ul>
+      </section>
+      <section class="manifest" id="manifest">
+        <h2>manifest</h2>
+        <p>
+          only by doing something long enough you can reach your goal, it's not
+          possible to learn art, music, have a good body, be exceptional
+          engineer without spending hundreds of hours on it.
+        </p>
+        <p>
+          the thing that surprises me is how people are scared of trying
+          something, it's always easier to say that you're not good in that
+          particular field, but if you keep saying such things, thinking that
+          way you'll never become good at anything. my main message is that
+          people should try out new things constantly: hobbies, sports,
+          professional fieds and be ready to spend time to achieve something
+          visible.
+        </p>
+        <blockquote>
+          <p>I'll be happy when I'm successful</p>
+          <p>Nothin' nice gets left for the restful</p>
+        </blockquote>
+      </section>
+    </main>
+    <footer>
+      <p><small>&copy: msx128, 2026</small></p>
+      ⌲ tg: <a href="https://t.me/sibwsidn">@sibwsidn</a>; 🖂mail:
+      <a href="mailto:msx128@proton.me">msx128@proton.me</a>
+    </footer>
   </body>
 </html>
